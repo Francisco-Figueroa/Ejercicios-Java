@@ -1,0 +1,28 @@
+package Ejercicio_6;
+import java.util.Scanner;
+public class Empleado {
+	private String nombre;
+	private int sueldo;
+	private String teclado;
+
+public void IngresarDatos() {
+	Scanner teclado = new Scanner (System.in);
+	nombre = teclado.next();
+	sueldo = teclado.nextInt();
+}
+public void Impuestos() {
+	if(sueldo > 3000) {
+		System.out.print("Tenes que pagar impuestos lince");
+	}else {
+		System.out.print("Estas libre de pecado hermano");
+	}
+}
+public void Imprimir() {
+	System.out.print("Aquí están sus datos:");
+	System.out.print("Nombre: "+nombre);
+	System.out.print("Sueldo: $"+sueldo);
+	}
+
+Empleado.IngresarDatos();
+Empleado.Imprimir();
+Empleado.Impuestos(
